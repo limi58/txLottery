@@ -1,0 +1,27 @@
+.navWrapper{
+  ul{
+    margin: 0;
+    padding: 0;
+    border-bottom: solid @lightGrey 1px;
+    li{
+      cursor: pointer;
+      text-align: center;
+      // width: 6em;
+      // display: inline-block;
+      padding: 1em 0;
+      a{
+        display: block;
+        width: 100%;
+      }
+      .rightBorder{
+        border-right: solid 1px #ddd;
+      }
+      &.active{
+        a{
+          color: @red;
+        }
+        border-bottom: solid 2px @red;
+      }
+    }
+  }
+}
