@@ -10,7 +10,7 @@ module.exports = React.createClass({
   componentDidMount: function(){
     let clock = setInterval(()=>{
       this.setState({minute: this.state.minute - 1})
-      if(this.state.hour === 0)this.setState({hour: 0})
+      if(this.state.hour === 0)this.setState({hour: 9})
       if(this.state.minute === 0)this.setState({hour: this.state.hour - 1, minute: 59})
     },1000)
   },
